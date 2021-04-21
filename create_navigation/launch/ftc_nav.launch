@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+ <node   name="move_base" pkg="asr_move_base" type="move_base" respawn="false"  output="screen">
+   <param name="controller_frequency" value="5"/>
+   <param name="planner_frequency" value="5"/>
+   <param name="base_global_planner" value="navfn/NavfnROS"/>
+   <param name="base_local_planner" value="ftc_local_planner/FTCPlanner" />
+   <rosparam file="$(find create_navigation)/config/create_asr/costmap_common_params.yaml" command="load" ns="global_costmap"/>
+   <rosparam file="$(find create_navigation)/config/create_asr/costmap_common_params.yaml" command="load" ns="local_costmap"/>
+   <rosparam file="$(find create_navigation)/config/create_asr/global_costmap_params.yaml" command="load"/>
+   <rosparam file="$(find create_navigation)/config/create_asr/local_costmap_params.yaml" command="load"/>
+   <rosparam file="$(find create_navigation)/config/create_asr/ftc_local_planner_params.yaml" command="load"/>
+ </node>
+
+</launch>

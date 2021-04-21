@@ -1,0 +1,35 @@
+detect_interval: 3
+
+use_move_base: True
+
+# bd: [-0.15,-0.35,0,0,0,1,0]
+final_goal: [-0.66,-0.9,0,0,0,0.87,-0.5]
+start_point: None 
+
+# bd:[[0,-0.38,0,0,0,0,1],[2.12,-0.25,0,0,0,0.71,0.71],[2.1,0.3,0,0,0,1,0],[0,0,0,0,0,0.71,0.71],[0.1,0.6,0,0,0,0,1],[1.9,0.6,0,0,0,-0.71,0.71]]
+find_toycar:
+  patrol_route: [[-0.35,0.7,0,0,0,0,1],[0.75,0.63,0,0,0,-0.71,0.71],[0.73,0.11,0,0,0,1,0],[-0.48,0.1,0,0,0,-0.71,0.71],[-0.51,-0.54,0,0,0,0,1],[0.66,-0.5,0,0,0,-0.71,0.71]]
+
+docking_toycar:
+  left_port: [486,371]
+  right_port: [777,384]
+  enter_port: 390
+# detect model param
+detect:
+  far_conf_thres: 0.65
+  near_conf_thres: 0.2
+  model_half: True
+  model_path: '../model/best.pt' 
+  device: 'gpu' # 'gpu' or 'cpu'
+
+# camera param
+camera:
+  image_shape: [1280,720]
+  camera_fps: 30
+  # camera_dev and camera_param_root
+  far_camera:
+    dev: 2
+    path: 'camera1'
+  near_camera:
+    dev: 4
+    path: 'camera2'

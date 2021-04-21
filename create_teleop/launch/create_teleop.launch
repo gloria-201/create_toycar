@@ -1,0 +1,9 @@
+<launch>
+  <node name="create_teleop" pkg="create_teleop" type="create_teleop.py" output="screen">
+    <param name="scale_linear" value="0.1" type="double"/>
+    <param name="scale_angular" value="0.4" type="double"/>
+  </node>
+
+  <!-- Start Rviz  
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find create_navigation)/rviz/create.rviz" /> --> 
+</launch>

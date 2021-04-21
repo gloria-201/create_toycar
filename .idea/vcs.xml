@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/asr_ftc_local_planner" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/asr_move_base" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/asr_nav_core" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libcreate" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rplidar_ros" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/yolov5" vcs="Git" />
+  </component>
+</project>
