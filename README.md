@@ -12,20 +12,20 @@ This project is built on ROS Melodic
    git clone --branch melodic https://github.com/asr-ros/asr_ftc_local_planner.git
    git clone --branch melodic https://github.com/asr-ros/asr_move_base.git
    git clone --branch melodic https://github.com/asr-ros/asr_nav_core.git
------------------------------- 
+
 ------------------------------
   The iRobot Create 2 drive packages are from the repo:  https://github.com/AutonomyLab/create_robot.git , My repo add 2 msg file in create_msgs
    git clone https://github.com/gloria-201/create_toycar.git
    catkin build
-------------------------------
+
 ------------------------------
 Make sure the navigation part works correct:
    roslaunch create_navigation test_nav.launch
-------------------------------
+
 ------------------------------
 Launch the detection part with:
    roslaunch push_toy_car push_toycar.launch
-------------------------------
+
 ------------------------------
 You can tune the parameters in /push_toycar/config/push_toycar_params.yaml
 Or change your own training model with /push_toycar/model/best.pt
